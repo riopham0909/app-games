@@ -1,0 +1,17 @@
+{
+  "platform": "azerion",
+  "gameSlug": "solitaire-mahjong-candy",
+  "gameBuild": "1.2.6",
+  "gameID": "dcda977213a142f798c25968e19ea0cd",
+  "gameTitle": "Solitaire Mahjong Candy",
+  "interface": "sgSdk",
+  "leaderboardSupport": false,
+  "inAppPurchase": false,
+  "adsConfig": {
+    "adFreeInitialLevels": 0,
+    "interstitialCooldownLevel": 0,
+    "longGameplayCooldownMS": 240000,
+    "enableLongGameplayAds": true,
+    "supportsAdPlayButton": true
+  }
+}
