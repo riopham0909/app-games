@@ -1,0 +1,21 @@
+{
+  "platform": "azerion",
+  "gameSlug": "solitaire-mahjong-classic-2",
+  "gameBuild": "1.0.16",
+  "gameID": "9b7a4fab96064bdfb5fef94f911f7381",
+  "gameTitle": "Solitaire Mahjong Classsic 2",
+  "interface": "sgSdk",
+  "leaderboardSupport": false,
+  "inAppPurchase": false,
+  "options": {
+    "reloadOnFold": true
+  },
+  "adsConfig": {
+    "rewarded": true,
+    "adFreeInitialLevels": 0,
+    "interstitialCooldownLevel": 0,
+    "longGameplayCooldownMS": 240000,
+    "enableLongGameplayAds": true,
+    "supportsAdPlayButton": true
+  }
+}
