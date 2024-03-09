@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Mahjong Alchemy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	 <link rel="shortcut icon" href="images/ico.png" type="image/png">
+	
+	<!-- Yandex Games SDK -->
+
+
+	
+	<script src="lib/pixi.min.js"></script>
+	<script src="lib/jquery.min.js"></script>
+	
+	
+	<script type="text/javascript" src="lib/textFit.min.js"></script>
+	<script type="text/javascript" src="lib/howler.min.js"></script>
+
+	<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(85596634, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/85596634" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+	<script type="text/javascript">
+
+var back_music = new Howl({
+  src: ['./sounds/music.mp3'],
+  autoplay: true,
+  loop: true,
+  preload : true,
+  volume: 0.2,
+  onload: function() {
+    //back_music.volume(0)
+    //back_music.fade(0, 0.5, 10000)
+  }
+});
+		window["GD_OPTIONS"] = {
+    "gameId": "05ff9c8b10a447739074c8c676a3193b",
+    "advertisementSettings": {
+        "debug": true, // Enable IMA SDK debugging.
+        "autoplay": false, // Don't use this because of browser video autoplay restrictions.
+        "locale": "en", // Locale used in IMA SDK, this will localize the "Skip ad after x seconds" phrases.
+    },
+    "onEvent": function(event) {
+        switch (event.name) {
+            case "SDK_GAME_START":
+                // advertisement done, resume game logic and unmute audio
+                back_music.mute(false)
+                Howler.volume(1);
+                break;
+            case "SDK_GAME_PAUSE":
+                // pause game logic / mute audio
+                back_music.mute(true)
+                Howler.volume(0);
+                break;
+            case "SDK_GDPR_TRACKING":
+                // this event is triggered when your user doesn't want to be tracked
+                break;
+            case "SDK_GDPR_TARGETING":
+                // this event is triggered when your user doesn't want personalised targeting of ads and such
+                break;
+        }
+    },
+};
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = 'main.min.js';
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'gamedistribution-jssdk'));
+	</script>
+
+	<script>
+		var game_data = {
+  "score": 0,
+  "money": 0,
+  "scores": [
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0
+  ],
+  "opened_cards": [
+  [], // необычные
+  [], // редкие
+  [], // эпические
+  []  // леГендарные
+  ]
+}
+		var load_progress = function() {
+
+var loaded_progress = localStorage.getItem('ma_progress')
+
+        if (loaded_progress == undefined) {
+          loaded_progress = game_data
+        } else {
+          loaded_progress = JSON.parse(loaded_progress)
+        }
+
+        return loaded_progress
+ 
+}
+
+		var available_types = []
+		var assets_loaded = false;
+		var y_sdk;
+		/*
+	    YaGames
+	        .init()
+	        .then(ysdk => {
+	        	ysdk.getStorage().then(safeStorage => Object.defineProperty(window, 'localStorage', { get: () => safeStorage }))
+			    .then(() => {
+			       localStorage.setItem('key', 'safe storage is working');
+			       console.log(localStorage.getItem('key'))
+			    })
+
+			    setTimeout(function() {
+			    	console.log('showFullscreenAdv executed')
+			    	//ysdk.adv.showFullscreenAdv()
+			    	last_ad_time = performance.now()
+			    }, 30 * 1000)
+	            y_sdk = ysdk
+	    })
+	    */		
+	            game_data = load_progress();
+	            for (var i=0; i < 35; i++) {
+					  PIXI.Loader.shared.add(String(i+1), './images/cards/'+String(i+1)+'.webp')
+					  available_types.push(String(i+1))
+					}
+
+
+
+					
+
+					PIXI.Loader.shared.add('selected', './images/light_ico.webp')
+					PIXI.Loader.shared.add('hint', './images/hint_ico.webp')
+					PIXI.Loader.shared.add('dark_ico', './images/dark_ico.webp')
+					PIXI.Loader.shared.add('merge_light', './images/merge_light.webp')
+
+						            // заГрузим необычные
+					for (var i=0; i < game_data.opened_cards[0].length; i++) {
+					  i = Number(i)
+					  PIXI.Loader.shared.add('uncommon_'+ String(i+1), './images/cards/uncommon/new1_'+String(i+1)+'.webp')
+					  available_types.push('uncommon_'+ String(i+1))
+					}
+
+					// заГрузим редкие
+					for (var i=0; i < game_data.opened_cards[1].length; i++) {
+					  i = Number(i)
+					  PIXI.Loader.shared.add('rare_'+ String(i+1), './images/cards/rare/new2_'+String(i+1)+'.webp')
+					  available_types.push('rare_'+ String(i+1))
+					}
+
+					// заГрузим эпические
+					for (var i=0; i < game_data.opened_cards[2].length; i++) {
+					  i = Number(i)
+					  PIXI.Loader.shared.add('epic_'+ String(i+1), './images/cards/epic/new3_'+String(i+1)+'.webp')
+					  available_types.push('epic_'+ String(i+1))
+					}
+
+					// заГрузим леГенарные
+					for (var i=0; i < game_data.opened_cards[3].length; i++) {
+					  i = Number(i)
+					  PIXI.Loader.shared.add('legendary_'+ String(i+1), './images/cards/legendary/new4_'+String(i+1)+'.webp')
+					  available_types.push('legendary_'+ String(i+1))
+					}
+					PIXI.Loader.shared.load(function() {
+
+    console.log("All first files loaded");
+    assets_loaded = true;
+
+    var texture = new PIXI.Texture(PIXI.Loader.shared.resources['merge_light'].texture)
+
+    //var texture = PIXI.Texture.from('fire_200.webp')
+    merge_light_sprite = new PIXI.Sprite(texture)
+
+    var zoom = cell_size/235 * 1.5
+
+    zoom = Math.min(zoom, 1)
+    
+    merge_light_sprite.scale.set(zoom, zoom)
+    merge_light_sprite.alpha = 0
+
+    app.stage.addChild(merge_light_sprite)
+
+   })
+			
+					console.log(available_types)
+
+
+	</script>
+	<style type="text/css">
+		
+
+		#preloader_anim {
+			width: 200px;
+			position: absolute;               /* 2 */
+			top: 50%;
+			left: 50%;                         /* 3 */
+			transform: translate(-50%, -50%)
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div id="preloader">
+	<img id="preloader_anim" src="images/preloader.gif">
+
+</div>
+
+<div id="main_menu_block">
+	<div class="background_img"></div>
+	<div class="filter_ton"></div>
+	<div class="filter2_img"></div>
+
+	<div id="el_1" class="back_el"></div>
+	<div id="el_2" class="back_el"></div>
+	<div id="el_3" class="back_el"></div>
+	<div id="el_4" class="back_el"></div>
+
+	<div class="filter3_img"></div>
+	<div class="filter4_img" ></div>
+	<div id="main_menu_title">Маджонг</div>
+	<div id="main_menu_title2">Алхимия</div>
+	<span id="version_info">v2.2.46 (99) gd</span>
+	<div id="flag" onclick="change_lang();"></div>
+	<div id="mm_button_1" class="mm_button" onclick="show_ad(); open_levels_block(); click_sound.play(); ">
+		играть
+	</div>
+	<br>
+	<div id="mm_button_2" class="mm_button" onclick="open_description_block(); click_sound.play();">
+		об игре
+	</div>
+
+	<div id="description_block">
+		<div id="close_button" onclick="close_description_block(); click_sound.play();">
+			
+		</div>
+		<div id="description_text">
+			
+			<center>
+				<span id="title">Об игре:</span>
+				<br>
+				<div id="desc_text_text">
+				Устали от обычной Алхимии? Надоел маджонг?
+				Прикоснитесь к алхимическим карточкам, пронизанных древней магией в антураже чарующего Востока!
+				Окунитесь в атмосферу нескончаемого праздника вместе с Маджонг Алхимия!
+				</div>
+			</center>
+
+		</div>
+	</div>
+</div>
+
+<div id="levels_menu_block">
+	<div class="background_img"></div>
+	<div class="filter_ton"></div>
+	<div class="filter2_img"></div>
+	<div class="filter3_img"></div>
+	<div class="filter5_img"></div>
+	<div id="lm_title"><center>Выберите уровень</center></div>
+
+	<div id="lmb_balance_block">
+		<div id="lmb_score_little_block">
+			<div id="lmb_score_little_block_ico">
+				
+			</div>
+			<div id="lmb_score_little_block_value">
+				0
+			</div>
+		</div>
+		<div id="lmb_money_little_block">
+			<div id="lmb_money_little_block_ico">
+				
+			</div>
+			<div id="lmb_money_little_block_value">
+				0
+			</div>
+		</div>
+	</div>
+
+
+	<div id="levels_block">
+
+	</div>
+
+	<div id="lm_back_button" onclick="back_to_menu(); click_sound.play();">
+		
+	</div>
+
+	<div id="lm_shop_button" onclick="open_shop(); click_sound.play();">
+		
+	</div>
+</div>
+
+<div id="game_viewport_block">
+	<div class="background_img"></div>
+	
+	<div class="filter_ton"></div>
+	<div class="filter2_img"></div>
+	
+	<div class="filter3_img"></div>
+	<div class="filter5_img"></div>
+
+	
+	<div id="balance_block">
+		<div id="score_little_block">
+			<div id="score_little_block_ico">
+				
+			</div>
+			<div id="score_little_block_value">
+				0
+			</div>
+		</div>
+		<div id="money_little_block">
+			<div id="money_little_block_ico">
+				
+			</div>
+			<div id="money_little_block_value">
+				0
+			</div>
+		</div>
+	</div>
+
+
+	<div id="ico_1" class="side_icon" onclick="want_shuffle(); click_sound.play();"></div>
+	<div id="ico_2" class="side_icon" onclick="change_music(); click_sound.play();" ></div>
+	<div id="ico_3" class="side_icon" onclick="want_hint(); click_sound.play();"></div>
+	<div id="ico_4" class="side_icon" onclick="open_levels_block(); click_sound.play();"></div>
+
+
+	<!--
+	<img class="big_corner_left" src="images/corner_L.webp">
+	<img class="big_corner_right" src="images/corner_R.webp">
+	-->
+	<div id="level_passed_block">
+		<div id="text">
+			Уровень пройден!
+		</div>
+		<div id="score">
+			<div id="left">Счёт уровня:</div>
+			<div id="lpb_score_little_block">
+				<div id="lpb_score_little_block_ico">
+					
+				</div>
+				<div id="lpb_score_little_block_value">
+					0
+				</div>
+			</div>
+			<div id="lpb_money_little_block">
+				<div id="lpb_money_little_block_ico">
+					
+				</div>
+				<div id="lpb_money_little_block_value">
+					0
+				</div>
+			</div>
+		</div>
+		<div id="fox_text">
+			Это было 
+			<br>
+			бесподобно! 
+			<br>
+			Молодец!
+		</div>
+		<div id="fox">
+			
+		</div>
+	</div>
+	<div id="level_passed_block_icons">
+		<div id="level_passed_ico_1" class="level_passed_ico" onclick=" show_ad();open_levels_block(); click_sound.play();">
+		</div>
+
+		<div id="level_passed_ico_2" class="level_passed_ico" onclick="show_ad();restart_level(); click_sound.play();">
+		</div>
+
+		<div id="level_passed_ico_3" class="level_passed_ico" onclick="show_ad();open_next_level(); click_sound.play();">
+		</div>	
+	</div>
+
+	<div id="store_block">
+		<div id="store_block_title">
+			Хотите получить <br>
+			одну подсказку <br>
+			за <span class="green">5</span> <span class="green_coin"></span> ?
+		</div>
+		<div id="store_block_fox_text">
+			Я могу дать тебе подсказку <br> за просмотр рекламы. Это быстро.
+		</div>
+		<div id="fox">
+			
+		</div>
+		<div id="balance">
+			<div id="balance_left">У вас сейчас</div>
+			<div id="balance_money_little_block">
+				<div id="money_little_block_ico">
+					
+				</div>
+				<div id="money_little_block_value">
+					0
+				</div>
+			</div>
+		</div>
+
+		<div id="no_money_block">
+			Не хватает монет!
+		</div>
+
+		<div id="store_close_button" onclick="close_store(); click_sound.play();">
+			
+		</div>
+	</div>
+
+	<div id="store_block_buttons">
+		<div id="store_button_1">
+			Потратить 10 монет
+		</div>
+		<div id="store_button_2" >
+			Посмотреть рекламу
+		</div>
+	</div>
+
+<div id="no_moves_block">
+	<div id="no_moves_block_title">
+		Желаете <br> зарегистрироваться?
+	</div>
+	<div id="nmb_fox_text">
+		Так прогресс будет сохраняться на всех устройствах.
+	</div>
+	<div id="nmb_fox">
+		
+	</div>
+</div>
+<div id="no_moves_block_button" onclick="click_sound.play();">
+	Ок!
+</div>
+<div id="no_moves_block_button_2" onclick="close_no_moves_block(); click_sound.play();">
+	Позже
+</div>
+
+	
+</div>
+
+<div id="no_moves_block2">
+	<div id="no_moves_block2_title">
+		С возвращением!
+	</div>
+	<div id="nmb_fox_text2">
+		Вышло обновление! <br>
+		Желаете обновиться?
+	</div>
+	<div id="nmb_fox2">
+		
+	</div>
+</div>
+
+<div id="no_moves_block2_button">
+	Ок!
+</div>
+<div id="no_moves_block2_button_2" onclick="close_update_block(); click_sound.play();">
+	Позже
+</div>
+
+<div id="shop_block">
+	<div class="background_img"></div>
+	<div class="filter_ton"></div>
+	<div class="filter2_img"></div>
+	<div class="filter3_img"></div>
+	<div class="filter5_img"></div>
+	<div id="sb_title">
+		<center>МаГазин</center>
+	</div>
+
+	<div id="sb_balance_block">
+		<div id="sb_score_little_block">
+			<div id="sb_score_little_block_ico">
+				
+			</div>
+			<div id="sb_score_little_block_value">
+				0
+			</div>
+		</div>
+		<div id="sb_money_little_block">
+			<div id="sb_money_little_block_ico">
+				
+			</div>
+			<div id="sb_money_little_block_value">
+				0
+			</div>
+		</div>
+	</div>
+
+	<div id="shop_cards_block">
+		<div id="uncommon_block" class="shop_card_block" onclick="open_shop_warn_block(1);">
+			<img class="scb_mini_img" src="images/new_cards_1.webp">
+			<center>необычные</center>
+		</div>
+		<div id="rare_block" class="shop_card_block" onclick="open_shop_warn_block(2);">
+			<img class="scb_mini_img" src="images/new_cards_2.webp">
+			<center>редкие</center>
+		</div>
+		<div id="epic_block" class="shop_card_block" onclick="open_shop_warn_block(3);">
+			<img class="scb_mini_img" src="images/new_cards_3.webp">
+			<center>эпические</center>
+		</div>
+		<div id="legendary_block" class="shop_card_block" onclick="open_shop_warn_block(4);">
+			<img class="scb_mini_img" src="images/new_cards_4.webp">
+			<center>легендарные</center>
+		</div>
+		
+	</div>
+
+	<div id="shop_left_arrow" onclick="scroll_shop_left();">
+		
+	</div>
+
+	<div id="shop_right_arrow"  onclick="scroll_shop_right();">
+		
+	</div>
+
+	<div id="gallery_button" onclick="open_gallery_block();">
+		Галерея
+	</div>
+
+	<div id="sb_back_button" onclick="back_to_menu();">
+		
+	</div>
+
+	<div id="sb_ad_button" onclick="get_money_by_videoad()">
+		
+	</div>
+</div>
+
+
+<div id="shop_warn_block">
+	<div id="swb_title">
+		Хотите получить 1 необычную карточку?
+	</div>
+	<div id="swb_balance">
+		<div id="swb_balance_left">У вас сейчас</div>
+			<div id="swb_balance_money_little_block">
+				<div id="swb_money_little_block_ico">
+					
+				</div>
+				<div id="swb_money_little_block_value">
+					0
+				</div>
+			</div>
+		</div>
+
+		<div id="swb_img">
+			
+		</div>
+
+		<div id="swb_info">
+			<div id="swb_info_cost">
+				<div class="balance_left_block">Цена:</div>
+				<div id="swb_info_balance_money_little_block" class="balance_block">
+					<div class="balance_block_ico">
+						
+					</div>
+					<div class="balance_block_value">
+						10
+					</div>
+				</div>
+			</div>
+			<div id="swb_info_unlocked">
+				<div class="balance_left_block">Открыто:</div>
+				<div id="swb_info_unlocked_balance_money_little_block" class="balance_block">
+					<center>
+						<div class="balance_block_value">
+							0/10
+						</div>
+					</center>
+				</div>
+			</div>
+		</div>
+
+		<div id="swb_no_money_block">
+			Не хватает монет!
+		</div>
+
+		<div id="swb_store_close_button" onclick="close_shop_warn_block(); click_sound.play();">
+			
+		</div>
+
+	<div id="shop_warn_button" onclick="buy_card();">
+		Купить
+	</div>
+</div>
+
+<div id="recieved_card_block">
+	<div id="rcb_img_1" class="rotating">
+		
+	</div>
+	<div id="rcb_img_2">
+		
+	</div>
+	<div id="rcb_title">
+		Новая карточка!
+	</div>
+</div>
+
+<div id="gallery_block">
+	<div class="background_img"></div>
+	<div class="filter_ton"></div>
+	<div class="filter2_img"></div>
+	<div class="filter3_img"></div>
+	<div class="filter5_img"></div>
+	<div id="gb_title">
+		<center>Галерея</center>
+	</div>
+	<!--
+	<div id="gb_balance_block">
+		<div id="gb_score_little_block">
+			<div id="gb_score_little_block_ico">
+				
+			</div>
+			<div id="gb_score_little_block_value">
+				0
+			</div>
+		</div>
+		<div id="gb_money_little_block">
+			<div id="gb_money_little_block_ico">
+				
+			</div>
+			<div id="gb_money_little_block_value">
+				0
+			</div>
+		</div>
+	</div>
+	-->
+
+	<div id="gallery_all_cards_block">
+		<div id ="uncommon_cards_type" class="gallery_cards_type_block">
+			Необычные
+		</div>
+
+		<div id ="uncommon_cards" class="gallery_cards_block">
+			
+		</div>
+
+		<div id ="rare_cards_type" class="gallery_cards_type_block">
+			Редкие
+		</div>
+
+		<div id ="rare_cards" class="gallery_cards_block">
+			
+		</div>
+
+		<div id ="epic_cards_type" class="gallery_cards_type_block">
+			Эпические
+		</div>
+
+		<div id ="epic_cards" class="gallery_cards_block">
+			
+		</div>
+
+		<div id ="legendary_cards_type" class="gallery_cards_type_block">
+			ЛеГендарные
+		</div>
+
+		<div id ="legendary_cards" class="gallery_cards_block">
+			
+		</div>
+	</div>
+
+	<div id="gallery_left_arrow" onclick="scroll_gallery_left();">
+		
+	</div>
+
+
+
+	<div id="gallery_right_arrow"  onclick="scroll_gallery_right();">
+		
+	</div>
+
+
+
+	<div id="gb_back_button" onclick="back_to_shop();">
+		
+	</div>
+
+</div>
+
+<div id="rcb_protector" onclick="$('#rcb_protector').css('display', 'none'); $('#recieved_card_block').fadeOut(250) ">
+	
+</div>
+
+
+<!-- скрытые картинки -->
+<img class="hidden" src="images/button_on_ico.webp">
+<img class="hidden" src="images/icons/change_ico_light.webp">
+<img class="hidden" src="images/icons/hint_ico_light.webp">
+<img class="hidden" src="images/icons/menu_ico_light.webp">
+<img class="hidden" src="images/icons/sound_off_ico.webp">
+<img class="hidden" src="images/icons/sound_off_ico_light.webp">
+<img class="hidden" src="images/icons/sound_on_ico_light.webp">
+<img class="hidden" src="images/level_block_light.webp">
+
+<img class="hidden" src="images/icons/play_ico_light.webp">
+<img class="hidden" src="images/icons/replay_ico_light.webp">
+<img class="hidden" src="images/icons/exit_ico_light.webp">
+<img class="hidden" src="images/icons/ad_ico_light.webp">
+<img class="hidden" src="images/icons/store_ico_light.webp">
+
+<img class="hidden" src="images/icons/russia_ico.png">
+<img class="hidden" src="images/icons/usa_ico.png">
+<img class="hidden" src="images/icons/turkey_ico.png">
+
+<script type="text/javascript" src="scripts/init.js"></script>
+<script type="text/javascript" src="scripts/css_setup.js"></script>
+<script type="text/javascript" src="scripts/Tile.js"></script>
+<script type="text/javascript" src="scripts/functions.js"></script>
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,731 @@
+@font-face {
+	font-family: font_1;
+	src: url("fonts/font_1.ttf")   
+}
+
+@font-face {
+	font-family: font_2;
+	src: url("fonts/font_2.ttf")   
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: black;
+}
+
+#main_menu_block, #levels_menu_block, #game_viewport_block, #shop_block, #gallery_block {
+	position: absolute;
+	display: none;
+	opacity: 1;
+	/*background: url('images/fon.jpg');*/
+	background-color: black;
+	z-index: -999;
+}
+
+#levels_menu_block, #game_viewport_block, #shop_block {
+	background: linear-gradient(to right, #EA1100, #E59E03, #CA00FF);
+}
+
+.background_img {
+	background: linear-gradient(to right, rgba(234, 17, 0, 0.6), rgba(229, 158, 3, 0.6), rgba(202, 0, 255, 0.6));
+	position: absolute;
+	z-index: -998;
+}
+
+.background_img {
+	background: url('images/doma.jpg');
+	z-index: -998;
+	position: absolute;
+	background-size: auto 80vw;
+	background-position: center;
+}
+
+.filter_img {
+	background: url('images/fon_black_2.webp');
+	background-size: cover;
+	position: absolute;	
+	z-index: -997;
+}
+
+.filter_ton {
+	background: linear-gradient(to right, rgba(234, 17, 0, 0.6), rgba(229, 158, 3, 0.6), rgba(202, 0, 255, 0.6));
+	opacity: 0.5;
+	position: absolute;
+	z-index: -997;
+}
+
+.filter2_img {
+	position: absolute;
+	background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(0,0,0,0.9) 70%,rgba(0,0,0,0.9) 110%);
+	z-index: -996;
+}
+
+.filter3_img {
+	position: absolute;
+	background: url('images/flowers_left.webp');
+	background-size: 100% 100%;
+	z-index: -995;
+}
+
+.filter4_img {
+	position: absolute;
+	background: url('images/fonarik_right.webp');
+	background-size: 100% 100%;
+	z-index: -995;
+}
+
+.filter5_img {
+	position: absolute;
+	background: url('images/flowers_right.webp');
+	background-size: 100% 100%;
+	z-index: -994;
+}
+
+
+#main_menu_title {
+	position: absolute;
+	color: white;
+	font-family: font_1;
+	text-align: right;
+	height: fit-content;
+	z-index: 10;
+	pointer-events: none;
+}
+
+#main_menu_title2 {
+	position: absolute;
+	color: #FFDE00;
+	font-family: font_2;
+	text-align: right;
+	height: fit-content;
+	z-index: 10;
+	pointer-events: none;
+}
+
+#mm_buttons_block {
+	position: relative;
+	z-index: 10;
+}
+
+.mm_button {
+	background: url('images/button_ico.webp');
+	background-size: 100% 100%;
+	color: white;
+	font-family: font_1;
+	width: 100%;
+	cursor: pointer;
+	position: absolute;
+	box-sizing: border-box;
+}
+
+.pointer-device .mm_button:hover,
+.touch-device .mm_button:active {
+	background: url('images/button_on_ico.webp');
+	background-size: 100% 100%;
+}
+
+#lm_title, #sb_title, #gb_title {
+	color: white;
+	font-family: font_2;
+	position: absolute;
+	z-index: 10;
+}
+
+#levels_block {
+	overflow-y: auto;
+	z-index: 10;
+}
+
+.level_block, .shop_card_block {
+	/*background: rgba(0, 0, 0, 0.7);*/
+	background: url('images/level_block.webp');
+	background-size: 100% 100%;
+	display: inline-block;
+	color: white;
+	width: 39%;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 10%;
+	box-sizing: border-box;
+	border: none;
+    position: relative;
+    font-family: font_2;
+
+}
+
+.shop_card_block {
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 0%;
+}
+
+.pointer-device .level_block:hover,
+.touch-device .level_block:active,
+.pointer-device .shop_card_block:hover,
+.touch-device .shop_card_block:active {
+	cursor: pointer;
+	background-image: url('images/level_block_light.webp');
+}
+
+.corner {
+	position: absolute;
+	display: none;
+}
+
+.big_corner_left, .big_corner_right {
+	position: absolute;
+	pointer-events: none;
+	display: none;
+}
+
+.side_icon {
+	position: absolute;
+	cursor: pointer;
+}
+
+.mini_img, .scb_mini_img {
+	position: absolute;
+}
+
+.level_block center, .shop_card_block center {
+	position: relative;
+}
+
+.back_el {
+	position: absolute;
+
+}
+
+
+#version_info {
+	color: white;
+	font-size: 15px;
+	position: absolute;
+}
+
+.hidden {
+	display: none;
+	position: absolute;
+	left: -9999;
+}
+
+.side_icon {
+
+	background-size: 100% 100%;
+}
+
+#ico_1 {
+	background: url('images/icons/change_ico.webp');
+	background-size: 100% 100%;
+}
+
+#ico_2 {
+	background: url('images/icons/sound_on_ico.webp');
+	background-size: 100% 100%;
+}
+
+#ico_3 {
+	background: url('images/icons/hint_ico.webp');
+	background-size: 100% 100%;
+}
+
+#ico_4 {
+	background: url('images/icons/menu_ico.webp');
+	background-size: 100% 100%;
+}
+
+.pointer-device #ico_1:hover,
+.touch-device #ico_1:active {
+	background-image: url('images/icons/change_ico_light.webp');
+}
+
+.pointer-device #ico_2:hover,
+.touch-device #ico_2:active {
+	background-image: url('images/icons/sound_on_ico_light.webp');
+}
+
+.pointer-device #ico_3:hover,
+.touch-device #ico_3:active {
+	background-image: url('images/icons/hint_ico_light.webp');
+}
+
+.pointer-device #ico_4:hover,
+.touch-device #ico_4:active {
+	background-image: url('images/icons/menu_ico_light.webp');
+}
+
+#ico_2_off {
+	background: url('images/icons/sound_off_ico.webp');
+	background-size: 100% 100%;
+}
+
+.pointer-device #ico_2_off:hover,
+.touch-device #ico_2_off:active {
+	background-image: url('images/icons/sound_off_ico_light.webp');
+}
+
+#level_passed_block, #store_block, #shop_warn_block, #recieved_card_block {
+	background-size: 100% 100%;
+	background-image: url('images/block_win.webp');
+	position: absolute;
+	display: none;
+}
+
+#no_moves_block, #no_moves_block2 {
+	background-size: 100% 100%;
+	background-image: url('images/short_block.webp');
+	position: absolute;
+	display: none;
+}
+
+#level_passed_block_icons {
+	display: none;
+}
+
+#level_passed_block #text, #store_block_title, #no_moves_block_title, #no_moves_block2_title, #swb_title, #rcb_title {
+	font-family: font_2;
+	color: white;
+}
+
+#level_passed_block #score {
+	font-family: font_2;
+	color: white;
+	background-size: 100% 100%;
+	background-image: url('images/in.webp');
+}
+
+#level_passed_block #score #right {
+	float: right;
+	margin-right: 5%;
+}
+
+#level_passed_block #score #left {
+	margin-left: 5%;
+	position: absolute;
+}
+
+#score_little_block, #money_little_block, #balance_money_little_block, #lpb_score_little_block, #lpb_money_little_block, .lb_score_little_block, #lmb_score_little_block, #lmb_money_little_block,
+#sb_score_little_block, #sb_money_little_block,
+#swb_balance_money_little_block, .balance_block,
+#gb_score_little_block, #gb_money_little_block  {
+	background-size: 100% 100%;
+	background-image: url('images/in_2.webp');
+	position: absolute;
+}
+
+#level_passed_ico_1 {
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('images/icons/menu_ico.webp');
+	cursor: pointer;
+}
+
+#level_passed_ico_2 {
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('images/icons/replay_ico.webp');
+	cursor: pointer;
+}
+
+#level_passed_ico_3 {
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('images/icons/play_ico.webp');
+	cursor: pointer;
+}
+
+.pointer-device #level_passed_ico_1:hover,
+.touch-device #level_passed_ico_1:active {
+	background-image: url('images/icons/menu_ico_light.webp');
+}
+
+.pointer-device #level_passed_ico_2:hover,
+.touch-device #level_passed_ico_2:active {
+	background-image: url('images/icons/replay_ico_light.webp');
+}
+
+.pointer-device #level_passed_ico_3:hover,
+.touch-device #level_passed_ico_3:active {
+	background-image: url('images/icons/play_ico_light.webp');
+}
+
+#score_text {
+	color: white;
+	font-family: font_2;
+	position: absolute;
+}
+
+#description_block {
+	position: absolute;
+	background-image: url('images/desc_block.webp');
+	background-size: 100% 100%;
+	display: none;
+}
+
+#close_button, #store_close_button, #swb_store_close_button {
+	background-image: url('images/icons/exit_ico.webp');
+	background-size: 100% 100%;
+	cursor: pointer;
+	position: absolute;
+}
+
+.pointer-device #close_button:hover, .pointer-device #store_close_button:hover,
+.touch-device #close_button:active, .touch-device #store_close_button:active,
+.pointer-device #swb_close_button:hover, .pointer-device #swb_store_close_button:hover,
+.touch-device #swb_close_button:active, .touch-device #swb_store_close_button:active {
+	background-image: url('images/icons/exit_ico_light.webp');
+}
+
+#description_text {
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 10%;
+
+	font-family: Arial;
+}
+
+#description_text #title {
+	font-family: font_2;
+	color: white;
+}
+
+#score_little_block_ico, #lpb_score_little_block_ico, .lb_score_little_block_ico, #lmb_score_little_block_ico, #sb_score_little_block_ico, #gb_score_little_block_ico {
+	background-image: url('images/icons/coin2.webp');
+	background-size: 100% 100%;
+	position: absolute;
+}
+
+#money_little_block_ico, #lpb_money_little_block_ico, #lmb_money_little_block_ico, #sb_money_little_block_ico, 
+#swb_money_little_block_ico, .balance_block_ico, #gb_money_little_block_ico {
+	background-image: url('images/icons/coin1.webp');
+	background-size: 100% 100%;
+	position: absolute;
+}
+
+#score_little_block_value, #money_little_block_value, #lpb_score_little_block_value, #lpb_money_little_block_value, .lb_score_little_block_value, #lmb_score_little_block_value, #lmb_money_little_block_value,
+#sb_score_little_block_value, #sb_money_little_block_value, .balance_block_value,
+#swb_money_little_block_value, #gb_score_little_block_value, #gb_money_little_block_value {
+	font-family: font_2;
+	color: orange;
+	float: right;
+	margin-right: 10%;
+}
+
+#fox_text, #store_block_fox_text, #nmb_fox_text, #nmb_fox_text2 {
+	background-image: url("images/dialog.webp");
+	background-size: 100% 100%;
+	position: absolute;
+	color: white;
+	font-family: font_2;
+	padding: 2%;
+	padding-right: 5%;
+
+	box-sizing: border-box;
+}
+
+#fox, #nmb_fox, #nmb_fox2 {
+	background-image: url("images/fox.webp");
+	background-size: 100% 100%;
+	position: absolute;
+}
+
+#balance, #swb_balance {
+	position: absolute;
+	color: white;
+	font-family: font_2;
+}
+
+#balance_left, #swb_balance_left, .balance_left_block {
+	position: absolute;
+	color: white;
+	font-family: font_2;
+}
+
+#store_block_buttons {
+	position: absolute;
+	display: none;
+}
+
+#store_button_1, #store_button_2 {
+	background: url('images/button_ico.webp');
+	background-size: 100% 100%;
+	color: #6d0000;
+	font-weight: 900;
+	font-family: font_2;
+	width: 50%;
+	cursor: pointer;
+	position: absolute;
+	padding: 5%;
+	box-sizing: border-box;
+}
+
+#no_moves_block_button, #no_moves_block_button_2, #no_moves_block2_button, #no_moves_block2_button_2, #shop_warn_button {
+	background: url('images/button_ico.webp');
+	background-size: 100% 100%;
+	color: #6d0000;
+	font-weight: 900;
+	font-family: font_2;
+	cursor: pointer;
+	position: absolute;
+	padding: 2%;
+	padding-top: 3%;
+	box-sizing: border-box;
+	display: none;
+}
+
+#shop_warn_button {
+	padding: 3%;
+	padding-top: 6%;
+	display: block;
+}
+
+.pointer-device #store_button_1:hover, .pointer-device #store_button_2:hover, .pointer-device #no_moves_block_button:hover, .pointer-device #no_moves_block_button_2:hover,
+#no_moves_block2_button:hover, .pointer-device #no_moves_block2_button_2:hover,
+.touch #store_button_1:active, .touch-device #store_button_2:active, .touch-device #no_moves_block_button:active, .touch-device #no_moves_block_button_2:active,
+#no_moves_block2_button:active, .touch-device #no_moves_block2_button_2:active,
+.pointer-device #shop_warn_button:hover, .pointer-device #shop_warn_button:hover
+ {
+	background-image: url('images/button_on_ico.webp');
+	background-size: 100% 100%;
+}
+
+.green_coin {
+	background-image: url('images/icons/coin1.webp');
+	background-size: 100% 100%;
+	height: 120%;
+	display: inline-block;
+	position: relative;
+}
+
+
+#no_money_block, #swb_no_money_block {
+	position: absolute;
+	color: white;
+	background-size: 100% 100%;
+	background-image: url('images/no_money.webp');
+	font-family: font_2;
+	padding: 5%;
+	box-sizing: border-box;
+	display: none;
+}
+
+#balance_block, #lmb_balance_block, #sb_balance_block, #gb_balance_block {
+	position: absolute;
+	pointer-events: none;
+}
+
+#lm_back_button, #sb_back_button, #gb_back_button {
+	position: absolute;
+	cursor: pointer;
+	background-size: 100% 100%;
+	background-image: url('images/icons/menu_ico.webp');
+}
+
+.pointer-device #lm_back_button:hover, .touch-device #lm_back_button:active,
+.pointer-device #sb_back_button:hover, .touch-device #sb_back_button:active,
+.pointer-device #gb_back_button:hover, .touch-device #gb_back_button:active {
+	background-image: url('images/icons/menu_ico_light.webp');
+}
+
+#lm_shop_button {
+	position: absolute;
+	cursor: pointer;
+	background-size: 100% 100%;
+	background-image: url('images/icons/store_ico.webp');
+}
+
+.pointer-device #lm_shop_button:hover, .touch-device #lm_shop_button:active {
+	background-image: url('images/icons/store_ico_light.webp');
+}
+
+body {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#shop_cards_block {
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+#sb_ad_button {
+	position: absolute;
+	cursor: pointer;
+	background-size: 100% 100%;
+	background-image: url('images/icons/ad_ico.webp');
+}
+
+
+.pointer-device #sb_ad_button:hover, .touch-device #sb_ad_button:active {
+	background-image: url('images/icons/ad_ico_light.webp');
+}
+
+#gallery_button {
+	position: absolute;
+	cursor: pointer;
+	background-size: 100% 100%;
+	background-image: url('images/gallery_button.webp');
+	color: white;
+	font-family: font_2;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+#shop_left_arrow, #gallery_left_arrow {
+	position: absolute;
+	cursor: pointer;
+	background-size: 100% 100%;
+	background-image: url('images/to_left.webp');
+}
+
+#shop_right_arrow, #gallery_right_arrow {
+	position: absolute;
+	cursor: pointer;
+	background-size: 100% 100%;
+	background-image: url('images/to_right.webp');
+}
+
+#dark_block {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+}
+
+#level_passed_block, #shop_warn_block, #store_block, #recieved_card_block, #no_moves_block, #no_moves_block2 {
+	
+	box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.7);
+	background-color: rgba(0,0,0,0.7);
+}
+
+#swb_img {
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('images/new_cards_1.webp');
+}
+
+#swb_info {
+	position: absolute;
+}
+
+#rcb_img_1 {
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('images/light.webp');
+}
+
+#rcb_img_2 {
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('images/cards/1.webp');
+}
+
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 20s linear infinite;
+  -moz-animation: rotating 20s linear infinite;
+  -ms-animation: rotating 20s linear infinite;
+  -o-animation: rotating 20s linear infinite;
+  animation: rotating 20s linear infinite;
+}
+
+.gallery_cards_block {
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('images/block_big.webp');
+	
+}	
+
+.gallery_cards_type_block {
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('images/type.webp');
+	
+	color: white;
+	font-family: font_2;
+
+	box-sizing: border-box;
+
+}
+
+#gallery_all_cards_block {
+	position: absolute;
+	overflow-x: auto;
+	overflow-y: hidden;
+	box-sizing: border-box;
+}
+
+
+
+.uncommon_card {
+	background-size: 100% 100%;
+	background-image: url('images/cards/new1_dark.webp');
+	position: absolute;
+}
+
+.rare_card {
+	background-size: 100% 100%;
+	background-image: url('images/cards/new2_dark.webp');
+	position: absolute;
+}
+
+.epic_card {
+	background-size: 100% 100%;
+	background-image: url('images/cards/new3_dark.webp');
+	position: absolute;
+}
+
+.legendary_card {
+	background-size: 100% 100%;
+	background-image: url('images/cards/new4_dark.webp');
+	position: absolute;
+}
+
+#rcb_protector {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: none;
+}
+
+#preloader {
+	display: block;
+}
+
+#flag {
+	position: absolute;
+	background-size: 100% 100%;
+	background-image: url('images/icons/usa_ico.png');
+	cursor: pointer;
+}
