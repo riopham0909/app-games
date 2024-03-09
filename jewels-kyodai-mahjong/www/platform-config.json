@@ -1,0 +1,20 @@
+{
+  "platform": "azerion",
+  "gameSlug": "jewels-kyodai-mahjong",
+  "gameBuild": "1.0.13",
+  "gameID": "6fcd1f12261346e5bb6302fa08b1de8d",
+  "gameTitle": "Jewels Kyodai Mahjong",
+  "interface": "sgSdk",
+  "leaderboardSupport": false,
+  "inAppPurchase": false,
+  "options": {
+    "reloadOnFold": true
+  },
+  "adsConfig": {
+    "adFreeInitialLevels": 0,
+    "interstitialCooldownLevel": 0,
+    "longGameplayCooldownMS": 240000,
+    "enableLongGameplayAds": true,
+    "supportsAdPlayButton": true
+  }
+}
