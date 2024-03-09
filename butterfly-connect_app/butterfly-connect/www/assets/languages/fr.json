@@ -1,0 +1,19 @@
+{
+    "freeze": "Gel",
+    "store": "Boutique",
+    "shuffle": "Mélanger",
+    "hint": "Astuce",
+    "wings": "Ailes",
+    "themes": "Thèmes",
+    "selected": "Sélectionné",
+    "pause": "Pause",
+    "time_out": "Temps écoulé",
+    "scores": "Scores",
+    "play_again": "Jouer à nouveau",
+    "continue": "Continuer",
+    "stage_pass": "Passer de niveau",
+    "bonus": "Bonus",
+    "next": "Suivant",
+    "get_bonus": "Obtenir un bonus",
+    "pass_all_stages": "Passer tous les niveaux"
+}

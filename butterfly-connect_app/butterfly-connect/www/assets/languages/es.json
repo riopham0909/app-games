@@ -1,0 +1,19 @@
+{
+    "freeze": "Congelar",
+    "store": "Tienda",
+    "shuffle": "Mezclar",
+    "hint": "Pista",
+    "wings": "Alas",
+    "themes": "Temas",
+    "selected": "Seleccionado",
+    "pause": "Pausa",
+    "time_out": "Tiempo agotado",
+    "scores": "Puntuaciones",
+    "play_again": "Jugar de nuevo",
+    "continue": "Continuar",
+    "stage_pass": "Pase de nivel",
+    "bonus": "Bono",
+    "next": "Siguiente",
+    "get_bonus": "Obtener bono",
+    "pass_all_stages": "Pasar todos los niveles"
+}

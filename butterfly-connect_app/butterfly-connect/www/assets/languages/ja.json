@@ -1,0 +1,19 @@
+{
+    "freeze": "フリーズ",
+    "store": "ストア",
+    "shuffle": "シャッフル",
+    "hint": "ヒント",
+    "wings": "翼",
+    "themes": "テーマ",
+    "selected": "選択された",
+    "pause": "一時停止",
+    "time_out": "時間切れ",
+    "scores": "スコア",
+    "play_again": "もう一度遊ぶ",
+    "continue": "続ける",
+    "stage_pass": "ステージパス",
+    "bonus": "ボーナス",
+    "next": "次",
+    "get_bonus": "ボーナスを取得する",
+    "pass_all_stages": "すべてのステージをクリアする"
+}

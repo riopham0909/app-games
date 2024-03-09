@@ -1,0 +1,19 @@
+{
+    "freeze": "Blocca",
+    "store": "Negozio",
+    "shuffle": "Mescola",
+    "hint": "Suggerimento",
+    "wings": "Ali",
+    "themes": "Temi",
+    "selected": "Selezionato",
+    "pause": "Pausa",
+    "time_out": "Tempo scaduto",
+    "scores": "Punteggi",
+    "play_again": "Gioca di nuovo",
+    "continue": "Continua",
+    "stage_pass": "Pass di livello",
+    "bonus": "Bonus",
+    "next": "Prossimo",
+    "get_bonus": "Ottieni bonus",
+    "pass_all_stages": "Supera tutti i livelli"
+}

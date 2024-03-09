@@ -1,0 +1,19 @@
+{
+    "freeze": "Freeze",
+    "store": "Store",
+    "shuffle": "Shuffle",
+    "hint": "Hint",
+    "wings": "Wings",
+    "themes": "Themes",
+    "selected": "Selected",
+    "pause": "Pause",
+    "time_out": "Time Out",
+    "scores": "Scores",
+    "play_again": "Play Again",
+    "continue": "Continue",
+    "stage_pass": "Stage Pass",
+    "bonus": "Bonus",
+    "next": "Next",
+    "get_bonus": "Get Bonus",
+    "pass_all_stages": "Pass All Stages"
+}

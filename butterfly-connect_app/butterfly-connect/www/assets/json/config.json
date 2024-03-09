@@ -1,0 +1,17 @@
+{
+  "START": {
+    "eventName": "level%%__levelStart"
+  },
+  "FAIL": {
+    "eventName": "level%%__levelFailed"
+  },
+  "UNLOCK_ITEM": {
+    "eventName": "unlock__%%"
+  },
+  "USE_BOOSTER": {
+    "eventName": "free__booster__%%"
+  },
+  "REWARD_AFTER_AD": {
+    "eventName": "rewardedVideo__%%"
+  }
+}

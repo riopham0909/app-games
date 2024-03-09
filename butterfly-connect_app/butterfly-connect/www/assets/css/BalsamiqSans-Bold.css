@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Balsamiq Sans Bold';
+    src: url('../fonts/BalsamiqSans-Bold/BalsamiqSans-Bold.eot');
+    src: 
+        url('../fonts/BalsamiqSans-Bold/BalsamiqSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BalsamiqSans-Bold/BalsamiqSans-Bold.woff2') format('woff2'),
+        url('../fonts/BalsamiqSans-Bold/BalsamiqSans-Bold.woff') format('woff'),
+        url('../fonts/BalsamiqSans-Bold/BalsamiqSans-Bold.ttf') format('truetype'),
+        url('../fonts/BalsamiqSans-Bold/BalsamiqSans-Bold.svg') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}

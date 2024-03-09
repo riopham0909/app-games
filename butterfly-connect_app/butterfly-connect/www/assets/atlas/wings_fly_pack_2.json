@@ -1,0 +1,684 @@
+{"frames": {
+
+"butterfly_16-fly_00.png":
+{
+	"frame": {"x":400,"y":1,"w":106,"h":109},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":1,"y":23,"w":106,"h":109},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_01.png":
+{
+	"frame": {"x":51,"y":221,"w":97,"h":110},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":20,"w":97,"h":110},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_02.png":
+{
+	"frame": {"x":142,"y":333,"w":74,"h":113},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":14,"w":74,"h":113},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_03.png":
+{
+	"frame": {"x":1,"y":447,"w":46,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":61,"y":10,"w":46,"h":116},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_04.png":
+{
+	"frame": {"x":262,"y":448,"w":25,"h":119},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":8,"w":25,"h":119},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_05.png":
+{
+	"frame": {"x":351,"y":453,"w":17,"h":120},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":90,"y":8,"w":17,"h":120},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_06.png":
+{
+	"frame": {"x":326,"y":450,"w":23,"h":119},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":84,"y":8,"w":23,"h":119},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_07.png":
+{
+	"frame": {"x":289,"y":450,"w":35,"h":118},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":72,"y":8,"w":35,"h":118},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_08.png":
+{
+	"frame": {"x":49,"y":447,"w":53,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":54,"y":10,"w":53,"h":116},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_09.png":
+{
+	"frame": {"x":290,"y":334,"w":72,"h":114},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":13,"w":72,"h":114},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_10.png":
+{
+	"frame": {"x":371,"y":223,"w":90,"h":111},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":17,"w":90,"h":111},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_16-fly_11.png":
+{
+	"frame": {"x":77,"y":110,"w":101,"h":109},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":21,"w":101,"h":109},
+	"sourceSize": {"w":111,"h":132}
+},
+"butterfly_17-fly_00.png":
+{
+	"frame": {"x":99,"y":1,"w":105,"h":107},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":10,"w":105,"h":107},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_01.png":
+{
+	"frame": {"x":1,"y":1,"w":96,"h":106},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":9,"w":96,"h":106},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_02.png":
+{
+	"frame": {"x":1,"y":109,"w":74,"h":109},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":31,"y":4,"w":74,"h":109},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_03.png":
+{
+	"frame": {"x":1,"y":220,"w":48,"h":110},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":57,"y":2,"w":48,"h":110},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_04.png":
+{
+	"frame": {"x":463,"y":225,"w":27,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":78,"y":2,"w":27,"h":112},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_05.png":
+{
+	"frame": {"x":483,"y":112,"w":20,"h":111},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":85,"y":3,"w":20,"h":111},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_06.png":
+{
+	"frame": {"x":1,"y":332,"w":25,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":80,"y":2,"w":25,"h":112},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_07.png":
+{
+	"frame": {"x":28,"y":333,"w":38,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":67,"y":1,"w":38,"h":112},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_08.png":
+{
+	"frame": {"x":314,"y":221,"w":55,"h":111},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":50,"y":1,"w":55,"h":111},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_09.png":
+{
+	"frame": {"x":150,"y":221,"w":73,"h":110},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":3,"w":73,"h":110},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_10.png":
+{
+	"frame": {"x":206,"y":1,"w":89,"h":107},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":7,"w":89,"h":107},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_17-fly_11.png":
+{
+	"frame": {"x":297,"y":1,"w":101,"h":107},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":9,"w":101,"h":107},
+	"sourceSize": {"w":105,"h":117}
+},
+"butterfly_18-fly_00.png":
+{
+	"frame": {"x":370,"y":458,"w":110,"h":119},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":22,"w":110,"h":119},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_01.png":
+{
+	"frame": {"x":1,"y":686,"w":101,"h":121},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":19,"w":101,"h":121},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_02.png":
+{
+	"frame": {"x":104,"y":813,"w":78,"h":125},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":13,"w":78,"h":125},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_03.png":
+{
+	"frame": {"x":172,"y":945,"w":50,"h":129},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":8,"w":50,"h":129},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_04.png":
+{
+	"frame": {"x":419,"y":701,"w":28,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":6,"w":28,"h":132},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_05.png":
+{
+	"frame": {"x":482,"y":465,"w":21,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":89,"y":6,"w":21,"h":132},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_06.png":
+{
+	"frame": {"x":453,"y":579,"w":26,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":84,"y":6,"w":26,"h":132},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_07.png":
+{
+	"frame": {"x":262,"y":818,"w":39,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":6,"w":39,"h":131},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_08.png":
+{
+	"frame": {"x":224,"y":951,"w":57,"h":129},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":53,"y":8,"w":57,"h":129},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_09.png":
+{
+	"frame": {"x":184,"y":818,"w":76,"h":125},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":12,"w":76,"h":125},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_10.png":
+{
+	"frame": {"x":104,"y":689,"w":93,"h":122},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":16,"w":93,"h":122},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_18-fly_11.png":
+{
+	"frame": {"x":118,"y":567,"w":105,"h":120},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":20,"w":105,"h":120},
+	"sourceSize": {"w":110,"h":141}
+},
+"butterfly_19-fly_00.png":
+{
+	"frame": {"x":180,"y":110,"w":104,"h":109},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":23,"w":104,"h":109},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_01.png":
+{
+	"frame": {"x":286,"y":110,"w":94,"h":109},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":10,"y":21,"w":94,"h":109},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_02.png":
+{
+	"frame": {"x":68,"y":333,"w":72,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":15,"w":72,"h":112},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_03.png":
+{
+	"frame": {"x":417,"y":336,"w":44,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":60,"y":11,"w":44,"h":116},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_04.png":
+{
+	"frame": {"x":463,"y":339,"w":22,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":10,"w":22,"h":117},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_05.png":
+{
+	"frame": {"x":492,"y":225,"w":15,"h":119},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":89,"y":9,"w":15,"h":119},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_06.png":
+{
+	"frame": {"x":487,"y":346,"w":20,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":84,"y":10,"w":20,"h":117},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_07.png":
+{
+	"frame": {"x":104,"y":447,"w":33,"h":116},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":71,"y":10,"w":33,"h":116},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_08.png":
+{
+	"frame": {"x":364,"y":336,"w":51,"h":115},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":53,"y":11,"w":51,"h":115},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_09.png":
+{
+	"frame": {"x":218,"y":333,"w":70,"h":113},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":34,"y":14,"w":70,"h":113},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_10.png":
+{
+	"frame": {"x":225,"y":221,"w":87,"h":110},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":18,"w":87,"h":110},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_19-fly_11.png":
+{
+	"frame": {"x":382,"y":112,"w":99,"h":109},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":21,"w":99,"h":109},
+	"sourceSize": {"w":114,"h":132}
+},
+"butterfly_20-fly_00.png":
+{
+	"frame": {"x":225,"y":571,"w":114,"h":120},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":27,"w":114,"h":120},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_01.png":
+{
+	"frame": {"x":199,"y":693,"w":106,"h":123},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":8,"y":23,"w":106,"h":123},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_02.png":
+{
+	"frame": {"x":86,"y":940,"w":84,"h":128},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":30,"y":16,"w":84,"h":128},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_03.png":
+{
+	"frame": {"x":441,"y":1016,"w":59,"h":133},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":55,"y":10,"w":59,"h":133},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_04.png":
+{
+	"frame": {"x":403,"y":835,"w":38,"h":135},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":76,"y":8,"w":38,"h":135},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_05.png":
+{
+	"frame": {"x":474,"y":739,"w":32,"h":137},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":82,"y":7,"w":32,"h":137},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_06.png":
+{
+	"frame": {"x":462,"y":878,"w":37,"h":136},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":77,"y":7,"w":37,"h":136},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_07.png":
+{
+	"frame": {"x":390,"y":1111,"w":48,"h":136},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":66,"y":7,"w":48,"h":136},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_08.png":
+{
+	"frame": {"x":440,"y":1151,"w":65,"h":134},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":49,"y":9,"w":65,"h":134},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_09.png":
+{
+	"frame": {"x":85,"y":1070,"w":82,"h":131},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":32,"y":13,"w":82,"h":131},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_10.png":
+{
+	"frame": {"x":303,"y":826,"w":98,"h":127},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":16,"y":19,"w":98,"h":127},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_20-fly_11.png":
+{
+	"frame": {"x":307,"y":701,"w":110,"h":123},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":24,"w":110,"h":123},
+	"sourceSize": {"w":114,"h":147}
+},
+"butterfly_21-fly_00.png":
+{
+	"frame": {"x":169,"y":1084,"w":125,"h":125},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":31,"w":125,"h":125},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_01.png":
+{
+	"frame": {"x":283,"y":955,"w":116,"h":127},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":9,"y":28,"w":116,"h":127},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_02.png":
+{
+	"frame": {"x":296,"y":1084,"w":92,"h":130},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":33,"y":23,"w":92,"h":130},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_03.png":
+{
+	"frame": {"x":439,"y":1287,"w":63,"h":137},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":62,"y":16,"w":63,"h":137},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_04.png":
+{
+	"frame": {"x":73,"y":1333,"w":39,"h":141},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":86,"y":13,"w":39,"h":141},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_05.png":
+{
+	"frame": {"x":114,"y":1333,"w":32,"h":142},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":93,"y":13,"w":32,"h":142},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_06.png":
+{
+	"frame": {"x":201,"y":1340,"w":38,"h":142},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":87,"y":13,"w":38,"h":142},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_07.png":
+{
+	"frame": {"x":148,"y":1340,"w":51,"h":141},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":74,"y":13,"w":51,"h":141},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_08.png":
+{
+	"frame": {"x":1,"y":1333,"w":70,"h":137},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":55,"y":16,"w":70,"h":137},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_09.png":
+{
+	"frame": {"x":286,"y":1216,"w":90,"h":132},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":35,"y":21,"w":90,"h":132},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_10.png":
+{
+	"frame": {"x":54,"y":1203,"w":108,"h":128},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":17,"y":26,"w":108,"h":128},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_21-fly_11.png":
+{
+	"frame": {"x":164,"y":1211,"w":120,"h":127},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":29,"w":120,"h":127},
+	"sourceSize": {"w":125,"h":156}
+},
+"butterfly_22-fly_00.png":
+{
+	"frame": {"x":139,"y":448,"w":121,"h":117},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":34,"w":121,"h":117},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_01.png":
+{
+	"frame": {"x":341,"y":579,"w":110,"h":120},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":11,"y":30,"w":110,"h":120},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_02.png":
+{
+	"frame": {"x":1,"y":934,"w":83,"h":127},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":38,"y":23,"w":83,"h":127},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_03.png":
+{
+	"frame": {"x":1,"y":1194,"w":51,"h":134},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":70,"y":16,"w":51,"h":134},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_04.png":
+{
+	"frame": {"x":481,"y":599,"w":25,"h":138},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":96,"y":14,"w":25,"h":138},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_05.png":
+{
+	"frame": {"x":443,"y":853,"w":17,"h":139},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":104,"y":13,"w":17,"h":139},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_06.png":
+{
+	"frame": {"x":449,"y":713,"w":23,"h":138},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":98,"y":14,"w":23,"h":138},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_07.png":
+{
+	"frame": {"x":401,"y":972,"w":38,"h":137},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":83,"y":14,"w":38,"h":137},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_08.png":
+{
+	"frame": {"x":378,"y":1249,"w":59,"h":134},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":62,"y":16,"w":59,"h":134},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_09.png":
+{
+	"frame": {"x":1,"y":1063,"w":82,"h":129},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":39,"y":21,"w":82,"h":129},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_10.png":
+{
+	"frame": {"x":1,"y":809,"w":101,"h":123},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":20,"y":27,"w":101,"h":123},
+	"sourceSize": {"w":121,"h":153}
+},
+"butterfly_22-fly_11.png":
+{
+	"frame": {"x":1,"y":565,"w":115,"h":119},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":6,"y":32,"w":115,"h":119},
+	"sourceSize": {"w":121,"h":153}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "wings_fly_pack_2.png",
+	"format": "RGBA8888",
+	"size": {"w":508,"h":1483},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:72d5623dc614fb02d61a7a9ce796dd45:e7f7e55dd92b5fd2ff67440c7138e789:abe27d349ed0309d144a0ba64c92236b$"
+}
+}
