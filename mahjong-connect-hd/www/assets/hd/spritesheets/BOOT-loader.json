@@ -1,0 +1,75 @@
+{
+    "frames": {
+        "loading_bar_empty_2": {
+            "frame": {
+                "x": 0,
+                "y": 600,
+                "w": 513,
+                "h": 18
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 513,
+                "h": 18
+            },
+            "sourceSize": {
+                "w": 513,
+                "h": 18
+            }
+        },
+        "loading_bar_full_2": {
+            "frame": {
+                "x": 0,
+                "y": 628,
+                "w": 513,
+                "h": 18
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 513,
+                "h": 18
+            },
+            "sourceSize": {
+                "w": 513,
+                "h": 18
+            }
+        },
+        "logo": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 766,
+                "h": 590
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 766,
+                "h": 590
+            },
+            "sourceSize": {
+                "w": 766,
+                "h": 590
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/Ensighten/spritesmith",
+        "image": "BOOT-loader.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 766,
+            "h": 646
+        },
+        "scale": 1
+    },
+    "animations": {}
+}

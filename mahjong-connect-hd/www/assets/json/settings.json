@@ -1,0 +1,12 @@
+{
+	"hintsNr": 6,
+	"hintPenalty": 5,
+	"hintsForAd": 3,
+	"timeSec": 150,
+	"secForMatch": 3,
+	"pointsForMatch": 10,
+	"tileSize": [68,74],
+	"bonusPerSecond": 2,
+	"timerFlashingSec": 30,
+  "comboTime": 2000
+}
