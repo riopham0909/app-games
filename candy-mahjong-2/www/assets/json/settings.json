@@ -1,0 +1,14 @@
+{
+	"hintsNr": 6,
+	"hintPenalty": 5,
+	"hintsForAd": 3,
+	"timeSec": 190,
+	"secForMatch": 10,
+	"pointsForMatch": 10,
+	"boardSize": [14,10],
+	"mobileBoardSize": [10,13],
+	"tileSize": [68,74],
+	"bonusPerSecond": 2,
+	"timerFlashingSec": 30,
+  "comboTime": 2000
+}

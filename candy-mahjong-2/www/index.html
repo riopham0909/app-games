@@ -1,0 +1,29 @@
+<!doctype html><html><head><title>Candy Mahjong</title><meta charset="utf-8"><meta name="format-detection" content="telephone=no"><meta name="HandheldFriendly" content="true"/><meta name="robots" content="noindex,nofollow"/><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"/><meta name="apple-mobile-web-app-title" content="Phaser App"><meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width,height=device-height,user-scalable=0"><link rel="stylesheet" href="css/stylesheet.css" charset="utf-8"/><link rel="icon" type="image/GIF" href="icon.ico"><script src="azerion-libs.js"></script><script defer="defer" src="version.js"></script></head><body><div id="content"></div><div id="loader">Loading ...</div><div id="orientation"></div><div id="gameFontPreload"><div style="font-family: Lobster" class="fontPreload">.</div></div><script src="js/azUpdatedSdk.js"></script><script src="js/phaser.min.js"></script><script src="js/game.js"></script><script>sgSdk.initialize(['basic', 'levelGame'], {
+
+            build: '1.0.0',
+            supportedLanguages: ['en', 'de', 'es', 'it', 'pt', 'ru', 'tr', 'pl', 'fr', 'nl', 'ja'],
+            id: 'candy-mahjong',
+
+            freezeGame: function() {
+                console.log("HUI", "pause game")
+                game.paused = true
+            },
+            unfreezeGame: function() {
+                console.log("HUI", "resume game")
+                game.paused = false
+            },
+            runGame: function() {
+                game.state.start('MainMenu');
+                G.sfx.music.loop = true;
+                G.sfx.music.play();
+
+            },
+            goToLevel: function() {}
+        }, function(error, settings, sdkHandler) {
+
+            if (error) console.log(error);
+            window.sgSettings = settings;
+            window.sdkHandler = sdkHandler;
+            window.initGame();
+
+        });</script></body></html>

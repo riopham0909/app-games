@@ -1,0 +1,74 @@
+[
+	{
+		"gemTypes": 20,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "Down"
+	},
+	{
+		"gemTypes": 26,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "None"
+	},
+	{
+		"gemTypes": 30,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "UpDown"
+	},
+	{
+		"gemTypes": 32,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "LeftRight"
+	},
+	{
+		"gemTypes": 42,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "Left"
+	},
+	{
+		"gemTypes": 42,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "None"
+	},
+	{
+		"gemTypes": 42,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "Up"
+	},
+	{
+		"gemTypes": 42,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "Right"
+	},
+	{
+		"gemTypes": 42,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "LeftRight"
+	},
+	{
+		"gemTypes": 42,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "None"
+	},
+	{
+		"gemTypes": 42,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "None"
+	},
+	{
+		"gemTypes": 42,
+		"timeSec": 190,
+		"secForMatch": 5,
+		"fallType": "None"
+	}
+]
