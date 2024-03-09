@@ -1,0 +1,21 @@
+{
+	"hintsNr": 6,
+	"shuffleNr": 6,
+	"hintPenalty": 5,
+	"timeSec": 190,
+	"secForMatch": 10,
+	"pointsForMatch": 4,
+	"boardSize": [14,10],
+	"mobileBoardSize": [8,14],
+	"tileSize": [64,64],
+	"mobileTileSize": [56,56],
+	"bonusPerSecond": 1,
+	"extraShuffleAtLevelFinished": 1,
+	"extraHintsAtLevelFinished": 3,
+
+	"butterflyAnimation": {
+		"wingTweenDuration": 300,
+		"flyAwaySpeed": 1.5,
+		"flyAwayRotationLerp": 0.008
+	}
+}

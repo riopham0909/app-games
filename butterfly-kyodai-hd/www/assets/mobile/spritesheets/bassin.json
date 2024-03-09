@@ -1,0 +1,114 @@
+{
+    "frames": {
+        "bassin": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 540,
+                "h": 116
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 540,
+                "h": 116
+            },
+            "sourceSize": {
+                "w": 540,
+                "h": 116
+            }
+        },
+        "leaves": {
+            "frame": {
+                "x": 0,
+                "y": 126,
+                "w": 186,
+                "h": 54
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 186,
+                "h": 54
+            },
+            "sourceSize": {
+                "w": 186,
+                "h": 54
+            }
+        },
+        "water": {
+            "frame": {
+                "x": 196,
+                "y": 126,
+                "w": 144,
+                "h": 48
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 144,
+                "h": 48
+            },
+            "sourceSize": {
+                "w": 144,
+                "h": 48
+            }
+        },
+        "waterfall": {
+            "frame": {
+                "x": 0,
+                "y": 190,
+                "w": 38,
+                "h": 42
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 38,
+                "h": 42
+            },
+            "sourceSize": {
+                "w": 38,
+                "h": 42
+            }
+        },
+        "waterfall_waves": {
+            "frame": {
+                "x": 350,
+                "y": 126,
+                "w": 74,
+                "h": 34
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 74,
+                "h": 34
+            },
+            "sourceSize": {
+                "w": 74,
+                "h": 34
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/Ensighten/spritesmith",
+        "image": "bassin.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 540,
+            "h": 232
+        },
+        "scale": 1
+    }
+}

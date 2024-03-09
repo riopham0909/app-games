@@ -1,0 +1,354 @@
+{
+    "frames": {
+        "basin_waterfall": {
+            "frame": {
+                "x": 529,
+                "y": 321,
+                "w": 54,
+                "h": 56
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 54,
+                "h": 56
+            },
+            "sourceSize": {
+                "w": 54,
+                "h": 56
+            }
+        },
+        "basin_waterfall_hl": {
+            "frame": {
+                "x": 465,
+                "y": 321,
+                "w": 54,
+                "h": 58
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 54,
+                "h": 58
+            },
+            "sourceSize": {
+                "w": 54,
+                "h": 58
+            }
+        },
+        "bassin": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 461,
+                "h": 225
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 461,
+                "h": 225
+            },
+            "sourceSize": {
+                "w": 461,
+                "h": 225
+            }
+        },
+        "bassin_water_glare_1": {
+            "frame": {
+                "x": 882,
+                "y": 204,
+                "w": 37,
+                "h": 4
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 37,
+                "h": 4
+            },
+            "sourceSize": {
+                "w": 37,
+                "h": 4
+            }
+        },
+        "bassin_water_glare_2": {
+            "frame": {
+                "x": 783,
+                "y": 235,
+                "w": 26,
+                "h": 5
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 26,
+                "h": 5
+            },
+            "sourceSize": {
+                "w": 26,
+                "h": 5
+            }
+        },
+        "bassin_water_glare_3": {
+            "frame": {
+                "x": 747,
+                "y": 235,
+                "w": 26,
+                "h": 5
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 26,
+                "h": 5
+            },
+            "sourceSize": {
+                "w": 26,
+                "h": 5
+            }
+        },
+        "bassin_water_glare_4": {
+            "frame": {
+                "x": 837,
+                "y": 204,
+                "w": 35,
+                "h": 5
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 35,
+                "h": 5
+            },
+            "sourceSize": {
+                "w": 35,
+                "h": 5
+            }
+        },
+        "bassin_water_glare_5": {
+            "frame": {
+                "x": 837,
+                "y": 219,
+                "w": 17,
+                "h": 4
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 17,
+                "h": 4
+            },
+            "sourceSize": {
+                "w": 17,
+                "h": 4
+            }
+        },
+        "foliage": {
+            "frame": {
+                "x": 471,
+                "y": 0,
+                "w": 474,
+                "h": 143
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 474,
+                "h": 143
+            },
+            "sourceSize": {
+                "w": 474,
+                "h": 143
+            }
+        },
+        "foliage_l": {
+            "frame": {
+                "x": 206,
+                "y": 235,
+                "w": 167,
+                "h": 174
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 167,
+                "h": 174
+            },
+            "sourceSize": {
+                "w": 167,
+                "h": 174
+            }
+        },
+        "foliage_r": {
+            "frame": {
+                "x": 0,
+                "y": 235,
+                "w": 196,
+                "h": 181
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 196,
+                "h": 181
+            },
+            "sourceSize": {
+                "w": 196,
+                "h": 181
+            }
+        },
+        "water_dark": {
+            "frame": {
+                "x": 471,
+                "y": 153,
+                "w": 356,
+                "h": 70
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 356,
+                "h": 70
+            },
+            "sourceSize": {
+                "w": 356,
+                "h": 70
+            }
+        },
+        "water_light": {
+            "frame": {
+                "x": 383,
+                "y": 235,
+                "w": 320,
+                "h": 54
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 320,
+                "h": 54
+            },
+            "sourceSize": {
+                "w": 320,
+                "h": 54
+            }
+        },
+        "water_splash": {
+            "frame": {
+                "x": 837,
+                "y": 153,
+                "w": 107,
+                "h": 41
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 107,
+                "h": 41
+            },
+            "sourceSize": {
+                "w": 107,
+                "h": 41
+            }
+        },
+        "waterfall_highlights": {
+            "frame": {
+                "x": 713,
+                "y": 235,
+                "w": 24,
+                "h": 50
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 24,
+                "h": 50
+            },
+            "sourceSize": {
+                "w": 24,
+                "h": 50
+            }
+        },
+        "waterline_front": {
+            "frame": {
+                "x": 383,
+                "y": 299,
+                "w": 340,
+                "h": 12
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 340,
+                "h": 12
+            },
+            "sourceSize": {
+                "w": 340,
+                "h": 12
+            }
+        },
+        "waterline_side": {
+            "frame": {
+                "x": 383,
+                "y": 321,
+                "w": 72,
+                "h": 78
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 72,
+                "h": 78
+            },
+            "sourceSize": {
+                "w": 72,
+                "h": 78
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/Ensighten/spritesmith",
+        "image": "bassin.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 945,
+            "h": 416
+        },
+        "scale": 1
+    }
+}

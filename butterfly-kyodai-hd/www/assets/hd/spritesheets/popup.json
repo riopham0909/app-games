@@ -1,0 +1,174 @@
+{
+    "frames": {
+        "divider": {
+            "frame": {
+                "x": 272,
+                "y": 870,
+                "w": 624,
+                "h": 5
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 624,
+                "h": 5
+            },
+            "sourceSize": {
+                "w": 624,
+                "h": 5
+            }
+        },
+        "gameover_bg": {
+            "frame": {
+                "x": 0,
+                "y": 0,
+                "w": 930,
+                "h": 692
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 930,
+                "h": 692
+            },
+            "sourceSize": {
+                "w": 930,
+                "h": 692
+            }
+        },
+        "new_highscore_bg": {
+            "frame": {
+                "x": 940,
+                "y": 698,
+                "w": 118,
+                "h": 60
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 118,
+                "h": 60
+            },
+            "sourceSize": {
+                "w": 118,
+                "h": 60
+            }
+        },
+        "scores_bg": {
+            "frame": {
+                "x": 0,
+                "y": 702,
+                "w": 584,
+                "h": 158
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 584,
+                "h": 158
+            },
+            "sourceSize": {
+                "w": 584,
+                "h": 158
+            }
+        },
+        "tut1": {
+            "frame": {
+                "x": 940,
+                "y": 266,
+                "w": 262,
+                "h": 206
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 262,
+                "h": 206
+            },
+            "sourceSize": {
+                "w": 262,
+                "h": 206
+            }
+        },
+        "tut2": {
+            "frame": {
+                "x": 940,
+                "y": 482,
+                "w": 262,
+                "h": 206
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 262,
+                "h": 206
+            },
+            "sourceSize": {
+                "w": 262,
+                "h": 206
+            }
+        },
+        "tut3": {
+            "frame": {
+                "x": 0,
+                "y": 870,
+                "w": 262,
+                "h": 206
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 262,
+                "h": 206
+            },
+            "sourceSize": {
+                "w": 262,
+                "h": 206
+            }
+        },
+        "tut_bg": {
+            "frame": {
+                "x": 940,
+                "y": 0,
+                "w": 310,
+                "h": 256
+            },
+            "rotated": false,
+            "trimmed": false,
+            "spriteSourceSize": {
+                "x": 0,
+                "y": 0,
+                "w": 310,
+                "h": 256
+            },
+            "sourceSize": {
+                "w": 310,
+                "h": 256
+            }
+        }
+    },
+    "meta": {
+        "app": "https://github.com/Ensighten/spritesmith",
+        "image": "popup.png",
+        "format": "RGBA8888",
+        "size": {
+            "w": 1250,
+            "h": 1076
+        },
+        "scale": 1
+    }
+}

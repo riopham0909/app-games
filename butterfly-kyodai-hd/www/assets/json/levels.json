@@ -1,0 +1,63 @@
+[
+	{
+		"nrOfTypes": 20,
+		"fallType": "None",
+		"blockedSides": []
+	},
+	{
+		"nrOfTypes": 26,
+		"fallType": "Left", 
+		"blockedSides": [false,false,true]
+	},
+	{
+		"nrOfTypes": 30,
+		"fallType": "None",
+		"blockedSides": [false,false,false,true]
+	},
+	{
+		"nrOfTypes": 32,
+		"fallType": "None",
+		"blockedSides": [true,false,true,true]
+	},
+	{
+		"nrOfTypes": 42,
+		"fallType": "None",
+		"blockedSides": [true,true,true,true]
+	},
+	{
+		"nrOfTypes": 42,
+		"blockedSides": [true,true,true,true],
+		"inGridBlockers": [0,4,1,4,2,4,3,4],
+		"fallType": "None"
+	},
+{
+    "nrOfTypes": 42,
+    "blockedSides": [false,false,true,true],
+    "fallType": "LeftRight"
+},
+{
+    "nrOfTypes": 42,
+    "blockedSides": [true,true,false,false],
+    "fallType": "None"
+},
+{
+    "nrOfTypes": 42,
+    "blockedSides": [true,false,false,true],
+    "fallType": "None"
+},
+{
+    "nrOfTypes": 42,
+    "blockedSides": [false,true,true,false],
+    "fallType": "None"
+},
+{
+    "nrOfTypes": 42,
+    "blockedSides": [false,false,false,false],
+    "fallType": "Down"
+},
+{
+    "nrOfTypes": 42,
+    "blockedSides": [true,true,true,true],
+    "fallType": "Down"
+}
+]
