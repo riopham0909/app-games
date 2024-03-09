@@ -1,0 +1,16 @@
+{
+  "gameSlug": "mahjong-3d-candy",
+  "gameBuild": "1.0.9",
+  "gameID": "bfd56375a4054ac9bd714713ce65638e",
+  "gameTitle": "Mahjong 3d Candy",
+  "interface": "sgSdk",
+  "leaderboardSupport": false,
+  "adsConfig": {
+    "adFreeInitialLevels": 0,
+    "interstitialCooldownLevel": 0,
+    "longGameplayCooldownMS": 150000,
+    "enableLongGameplayAds": true,
+    "rewarded": true,
+    "supportsAdPlayButton": false
+  }
+}

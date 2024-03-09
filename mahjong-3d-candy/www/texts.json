@@ -1,0 +1,500 @@
+{
+    "strings": [
+        {
+            "id": 0,
+            "str": {
+                "en": "lev. ",
+                "ru": "ур. ",
+                "de": "lev."
+            }
+        },
+        {
+            "id": 1,
+            "str": {
+                "en": "LEVEL",
+                "ru": "УРОВЕНЬ",
+                "de": "LEVEL"
+            }
+        },
+        {
+            "id": 2,
+            "str": {
+                "en": "SCORES",
+                "ru": "ОЧКИ",
+                "de": "PUNKTZAHLEN"
+            }
+        },
+        {
+            "id": 3,
+            "str": {
+                "en": "NEW RECORD",
+                "ru": "НОВЫЙ РЕКОРД",
+                "de": "NEUER REKORD!"
+            }
+        },
+        {
+            "id": 4,
+            "str": {
+                "en": "LEVEL TIME:",
+                "ru": "ВРЕМЯ УРОВНЯ:",
+                "de": "LEVEL ZEIT:"
+            }
+        },
+        {
+            "id": 5,
+            "str": {
+                "en": " sec.",
+                "ru": " сек.",
+                "de": "sec."
+            }
+        },
+        {
+            "id": 6,
+            "str": {
+                "en": "Help",
+                "ru": "Помощь",
+                "de": "Hilfe"
+            }
+        },
+        {
+            "id": 7,
+            "str": {
+                "en": "Add +30 Seconds?",
+                "ru": "Добавить +30 секунд?",
+                "de": "30 Sekunden hinzufügen?"
+            }
+        },
+        {
+            "id": 10,
+            "str": {
+                "en": "Find & match two similar tiles",
+                "ru": "Найдите и соедините 2 одинаковых кубика",
+                "de": "Finde und tippe zwei gleiche Spielsteine an"
+            }
+        },
+        {
+            "id": 11,
+            "str": {
+                "en": "Rotate",
+                "ru": "Вращать",
+                "de": "Drehen"
+            }
+        },
+        {
+            "id": 12,
+            "str": {
+                "en": "Match all other cubes",
+                "ru": "Завершите уровень",
+                "de": "Enterne die restlichen Würfel"
+            }
+        },
+        {
+            "id": 13,
+            "str": {
+                "en": "Zoom in/out",
+                "ru": "Приблизить/удалить",
+                "de": "Zoome herein/heraus"
+            }
+        },
+        {
+            "id": 14,
+            "str": {
+                "en": "Use busters",
+                "ru": "Используйте бустеры",
+                "de": "Booster benutzen"
+            }
+        },
+        {
+            "id": 15,
+            "str": {
+                "en": "Close",
+                "ru": "Закрыть",
+                "de": "Schließen"
+            }
+        },
+        {
+            "id": 20,
+            "str": {
+                "en": "Help",
+                "ru": "Помощь",
+                "de": "Hilfe"
+            }
+        },
+        {
+            "id": 21,
+            "str": {
+                "en": "Shuffle",
+                "ru": "Смешать",
+                "de": "Mischen"
+            }
+        },
+        {
+            "id": 22,
+            "str": {
+                "en": "Move",
+                "ru": "Шаг",
+                "de": "Drehen"
+            }
+        },
+        {
+            "id": 23,
+            "str": {
+                "en": "Left",
+                "ru": "Влево",
+                "de": "Links"
+            }
+        },
+        {
+            "id": 24,
+            "str": {
+                "en": "Right",
+                "ru": "Вправо",
+                "de": "Rechts"
+            }
+        },
+        {
+            "id": 25,
+            "str": {
+                "en": "Pause",
+                "ru": "Пауза",
+                "de": "Pause"
+            }
+        },
+        {
+            "id": 26,
+            "str": {
+                "en": "Start Game",
+                "ru": "Играть",
+                "de": "Spiel starten"
+            }
+        },
+        {
+            "id": 27,
+            "str": {
+                "en": "Level",
+                "ru": "Уровень",
+                "de": "Level"
+            }
+        },
+        {
+            "id": 28,
+            "str": {
+                "en": "Score",
+                "ru": "Очки",
+                "de": "Punktzahlen"
+            }
+        },
+        {
+            "id": 29,
+            "str": {
+                "en": "Time",
+                "ru": "Время",
+                "de": "Zeit"
+            }
+        },
+        {
+            "id": 30,
+            "str": {
+                "en": "Options",
+                "ru": "Настройки",
+                "de": "Optionen"
+            }
+        },
+        {
+            "id": 31,
+            "str": {
+                "en": "Continue",
+                "ru": "Продолжить",
+                "de": "Fortsetzen"
+            }
+        },
+        {
+            "id": 32,
+            "str": {
+                "en": "Restart",
+                "ru": "Перезапуск",
+                "de": "Neustart"
+            }
+        },
+        {
+            "id": 33,
+            "str": {
+                "en": "Sound",
+                "ru": "Звук",
+                "de": "Soundeffekte"
+            }
+        },
+        {
+            "id": 34,
+            "str": {
+                "en": "Music",
+                "ru": "Музыка",
+                "de": "Musik"
+            }
+        },
+        {
+            "id": 35,
+            "str": {
+                "en": "Play Again",
+                "ru": "Играть снова",
+                "de": "Noch einmal spielen"
+            }
+        },
+        {
+            "id": 36,
+            "str": {
+                "en": "Highscore",
+                "ru": "Рекорд",
+                "de": "Highscore"
+            }
+        },
+        {
+            "id": 37,
+            "str": {
+                "en": "TIME'S",
+                "ru": "ВРЕМЯ",
+                "de": "ZEIT"
+            }
+        },
+        {
+            "id": 38,
+            "str": {
+                "en": "UP !",
+                "ru": "ВЫШЛО !",
+                "de": "ABGELAUFEN !"
+            }
+        },
+        {
+            "id": 39,
+            "str": {
+                "en": "- Your score -",
+                "ru": "- Ваш результат -",
+                "de": "- Deine Punktzahl -"
+            }
+        },
+        {
+            "id": 40,
+            "str": {
+                "en": "COMPLETED",
+                "ru": "ПРОЙДЕН",
+                "de": "ABGESCHLOSSEN"
+            }
+        },
+        {
+            "id": 41,
+            "str": {
+                "en": "BONUS",
+                "ru": "БОНУС",
+                "de": "BONUS"
+            }
+        },
+        {
+            "id": 42,
+            "str": {
+                "en": "No, thanks",
+                "ru": "Нет, спасибо",
+                "de": "Nein danke!"
+            }
+        },
+        {
+            "id": 43,
+            "str": {
+                "en": "Watch video",
+                "ru": "Смотреть видео",
+                "de": "Video ansehen"
+            }
+        },
+        {
+            "id": 50,
+            "str": {
+                "en": "x2",
+                "ru": "X 2",
+                "de": "X 2"
+            }
+        },
+        {
+            "id": 51,
+            "str": {
+                "en": "SPEED MATCH",
+                "ru": "БЫСТРОЕ УНИЧТОЖЕНИЕ",
+                "de": "GESCHWINDIGKEITS"
+            }
+        },
+        {
+            "id": 52,
+            "str": {
+                "en": "X 2 Speed Match:",
+                "ru": "X 2 Быстрое уничтожение:",
+                "de": "X 2 Geschwindigkeits"
+            }
+        },
+        {
+            "id": 53,
+            "str": {
+                "en": "You receive bonus points for",
+                "ru": "Продолжение реакции",
+                "de": "Du erhältst Bonuspunkte für Matches,"
+            }
+        },
+        {
+            "id": 54,
+            "str": {
+                "en": "making a match within 3",
+                "ru": "за счет новой реакции",
+                "de": "die Du innerhalb von 3 Sekdunden"
+            }
+        },
+        {
+            "id": 55,
+            "str": {
+                "en": "seconds of the last match.",
+                "ru": "в течении 3 секунд.",
+                "de": "nach dem letzten Match machst."
+            }
+        },
+        {
+            "id": 60,
+            "str": {
+                "en": "X 5",
+                "ru": "X 5",
+                "de": "x 5"
+            }
+        },
+        {
+            "id": 61,
+            "str": {
+                "en": "MULTIMATCH",
+                "ru": "МУЛЬТИМАТЧ",
+                "de": "MULTIMATCH"
+            }
+        },
+        {
+            "id": 62,
+            "str": {
+                "en": "X 5 Multimatch Combo:",
+                "ru": "X 5 Мультиматч комбо:",
+                "de": "X 5 Multimatch-Kombo"
+            }
+        },
+        {
+            "id": 63,
+            "str": {
+                "en": "You receive bonus points",
+                "ru": "Бонус за повторное",
+                "de": "Du erhältst Bonuspunkte wenn"
+            }
+        },
+        {
+            "id": 64,
+            "str": {
+                "en": "for repeatedly matching",
+                "ru": "уничтожение одного",
+                "de": "Du mehrfach hintereinander"
+            }
+        },
+        {
+            "id": 65,
+            "str": {
+                "en": "the same image.",
+                "ru": "цвета.",
+                "de": "das gleiche Motiv matchst."
+            }
+        },
+        {
+            "id": 70,
+            "str": {
+                "en": "+ 0:05",
+                "ru": "+ 0:05",
+                "de": "+ 0:05"
+            }
+        },
+        {
+            "id": 71,
+            "str": {
+                "en": "TIME BONUS",
+                "ru": "БОНУС ВРЕМЕНИ",
+                "de": "ZEITBONUS"
+            }
+        },
+        {
+            "id": 72,
+            "str": {
+                "en": "+ 0:05 Time Bonus:",
+                "ru": "+ 0:05 Бонус времени:",
+                "de": "+ 0:05 Zeitbonus"
+            }
+        },
+        {
+            "id": 73,
+            "str": {
+                "en": "You receive",
+                "ru": "Вы получаете бонус",
+                "de": "Du erhältst einen Zeitbonus"
+            }
+        },
+        {
+            "id": 74,
+            "str": {
+                "en": "a time bonus",
+                "ru": "за прохождение уровня",
+                "de": "für jedes Level,"
+            }
+        },
+        {
+            "id": 75,
+            "str": {
+                "en": "for finishing a level.",
+                "ru": "пока не истекло время.",
+                "de": "dass Du abschließt."
+            }
+        },
+        {
+            "id": 80,
+            "str": {
+                "en": "Click two cubes",
+                "ru": "Выберите 2 куба",
+                "de": "Klicke/Tippe auf zwei gleiche"
+            }
+        },
+        {
+            "id": 81,
+            "str": {
+                "en": "to match them.",
+                "ru": "чтобы убрать их.",
+                "de": "Würfel,um sie zu entfernen."
+            }
+        },
+        {
+            "id": 82,
+            "str": {
+                "en": "The cube can't be blocked ",
+                "ru": "Куб не может быть заблокирован",
+                "de": "Der Würfel kann nicht blockiert werden"
+            }
+        },
+        {
+            "id": 83,
+            "str": {
+                "en": "by other cubes on their",
+                "ru": "соседними кубами",
+                "de": "auf ihrer rechten oder linken"
+            }
+        },
+        {
+            "id": 84,
+            "str": {
+                "en": "left and right sides.",
+                "ru": "справа и слева",
+                "de": "Seite blockiert sein."
+            }
+        },
+        {
+            "id": 90,
+            "str": {
+                "en": "Show tutorial at game's start.",
+                "ru": "Показать туториал при старте.",
+                "de": "Tutorial beim Spielbeginn zeigen"
+            }
+        }
+    ]
+}
