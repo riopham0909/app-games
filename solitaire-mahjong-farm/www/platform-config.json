@@ -1,0 +1,20 @@
+{
+  "platform": "azerion",
+  "gameSlug": "solitaire-mahjong-farm",
+  "gameBuild": "1.0.23",
+  "gameID": "168a0fd58cb44335b564eb7dd5ca0156",
+  "gameTitle": "Solitaire Mahjong Farm",
+  "interface": "sgSdk",
+  "leaderboardSupport": false,
+  "inAppPurchase": false,
+  "options": {
+    "reloadOnFold": true
+  },
+  "adsConfig": {
+    "adFreeInitialLevels": 0,
+    "interstitialCooldownLevel": 0,
+    "longGameplayCooldownMS": 240000,
+    "enableLongGameplayAds": true,
+    "supportsAdPlayButton": true
+  }
+}
