@@ -7555,6 +7555,43 @@
 		if (!response.ok) throw new Error(`fetch '${response.url}' response returned ${response.status} ${response.statusText}`);
 	};
 	C3.FetchOk = function FetchOk(url, init) {
+		// return new Promise(function (resolve, reject) {
+		// 	var xhttp = new XMLHttpRequest();
+		// 	xhttp.onreadystatechange = function() {
+		// 		if (this.readyState == 4 && this.status == 200) {
+		// 			resolve(xhttp.response);
+		// 		// Typical action to be performed when the document is ready:
+		// 		}
+		// 	};
+		// 	// xhttp.responseType = "json";
+		// 	xhttp.open("GET", url, true);
+		// 	xhttp.send();
+		// }).then((response) => {
+		// 	return response
+		// })
+		return fetch(url, init).then(response => {
+			C3.ThrowIfNotOk(response);
+			return response
+		})
+	};
+	C3.FetchText = function FetchText(url) {
+		return new Promise(function (resolve, reject) {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					resolve(xhttp.response);
+				// Typical action to be performed when the document is ready:
+				}
+			};
+			xhttp.responseType = "text";
+			xhttp.open("GET", url, true);
+			xhttp.send();
+		}).then((response) => {
+			return response
+		})
+		return C3.FetchOk(url).then(response => response.text())
+	};
+	C3.FetchJson = function FetchJson(url) {
 		return new Promise(function (resolve, reject) {
 			var xhttp = new XMLHttpRequest();
 			xhttp.onreadystatechange = function() {
@@ -7564,23 +7601,45 @@
 				}
 			};
 			xhttp.responseType = "json";
-			xhttp.open("GET", seft.C3, true);
+			xhttp.open("GET", url, true);
 			xhttp.send();
 		}).then((response) => {
-			this.createWrapper(response)
+			return response
 		})
-
-	};
-	C3.FetchText = function FetchText(url) {
-		return C3.FetchOk(url).then(response => response.text())
-	};
-	C3.FetchJson = function FetchJson(url) {
 		return C3.FetchOk(url).then(response => response.json())
 	};
 	C3.FetchBlob = function FetchBlob(url) {
+		return new Promise(function (resolve, reject) {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					resolve(xhttp.response);
+				// Typical action to be performed when the document is ready:
+				}
+			};
+			xhttp.responseType = "blob";
+			xhttp.open("GET", url, true);
+			xhttp.send();
+		}).then((response) => {
+			return response
+		})
 		return C3.FetchOk(url).then(response => response.blob())
 	};
 	C3.FetchArrayBuffer = function FetchArrayBuffer(url) {
+		return new Promise(function (resolve, reject) {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					resolve(xhttp.response);
+				// Typical action to be performed when the document is ready:
+				}
+			};
+			xhttp.responseType = "arraybuffer";
+			xhttp.open("GET", url, true);
+			xhttp.send();
+		}).then((response) => {
+			return response
+		})
 		return C3.FetchOk(url).then(response => response.arrayBuffer())
 	};
 	C3.FetchImage = function FetchImage(url) {
