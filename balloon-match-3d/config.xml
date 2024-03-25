@@ -34,7 +34,7 @@
         <allow-intent href="market:*" />
         <preference name="AndroidXEnabled" value="true" />
         <preference name="Fullscreen" value="true" />
-        <preference name="Orientation" value="landscape" />
+        <!-- <preference name="Orientation" value="landscape" /> -->
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
